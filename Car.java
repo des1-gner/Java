@@ -1,40 +1,55 @@
-package com.mycompany.car;
 
-public class Car
+public class Car {
+
+private String make;
+private String model;
+private Integer year;
+
+public Car() {}
+
+public Car(String make,String model,int year) { // parameterized constructor
+
+this.make=make;
+this.model=model;
+this.year=year;
+	
+}
+
+public String getMake()
 {
-  private String make; // instance variables
-  private String model;
-  private int year;
-  
-  public Car() // default constructor
-  {
-  /*   make ="Holden";
-     model="commodore";
-     year=2010; */
-      
-  }    
-    public Car(String make,String model,int year)// parameterized constructor
-     {
-      this.make = make; 
-      this.model=model;
-      this.year = year;
-     }
-   public void setmake(String make)
-     {
-       this.make =make;
-     }
-    public String getmake()
-      {
-        return make;
-      }
-    
-    public String toString()
-      {
-        return " make of the car : " +make+ "\n"+
-                "Model of the car: " +model+ "\n"+
-                "Year of the car : "+year+ "\n"+
-                "__________________________";
-      }
-    
-    
+    return make;
+}
+
+public void setMake(String make)
+{
+    this.make=make;
+}
+
+public String getModel()
+{
+	return model;
+}
+
+public void setModel(String model)
+{
+	this.model=model;
+}
+
+public Integer getYear()
+{
+	return year;
+}
+
+public void setYear(Integer year)
+{
+	this.year=year;
+}
+
+public String toString()
+{
+    return "make of the Car : " +make+ "\n"+
+            "year of the Car : "  +year+ "\n"+
+            "model        : " +model+ "\n"+
+            " \n ######################";
+}
 }
