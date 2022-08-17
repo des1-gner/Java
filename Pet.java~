@@ -1,0 +1,30 @@
+public class Pet{
+  protected String name;
+  protected String type;
+  protected int age;
+//constructors
+public Pet(){}
+public Pet(String name, String type, int age){
+   this.name = name;
+   this.type = type;
+   this.age = age;
+}
+//methods
+ public String getName(){ return name;}
+ public int getAge(){ return age;}
+ public void setName(){ this.name = name;}
+ public void setAge(){ this.age = age;}
+ public String getType(){ return type;}
+ public void setType(){ this.type = type;}
+ 
+ public void speak(String sound){
+    System.out.println(sound );
+ }
+ public void eat(String food){
+    System.out.println(name + " loves "+ food);
+ }
+ public String toString(){
+   return "I have a " + type + " of " + age + " years old " + name;
+ }
+
+}

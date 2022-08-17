@@ -1,0 +1,28 @@
+public class Dog extends Pet{
+   private String breed;
+   //constructors
+   public Dog(){}
+   
+   public Dog(String name, String type,int age){
+     super(name, type, age);
+   }
+   
+   public Dog(String name, String type, int age,String breed){
+      super(name, type, age);
+      this.breed = breed;
+   }
+  
+   public String getBreed(){
+      return breed;
+  }
+   public void setBreed(String breed){
+       this.breed = breed;
+  }
+   //overriden method speak
+   public void speak(String sound){
+     System.out.println(name + " says "+  sound);
+   }
+   public String toString(){
+   return super.toString() + "\nBreed: "+ breed;
+ }
+}
