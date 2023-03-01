@@ -1,0 +1,11 @@
+public class UseStaticMethod{
+  public static void aMethod(){
+    System.out.println("static method is called");
+  }
+  
+  public static void main(String[] args){
+    //call method
+    aMethod();
+    
+  }
+}

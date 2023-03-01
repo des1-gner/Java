@@ -1,0 +1,57 @@
+import java.util.Scanner;
+  
+
+public class PrintLines{
+   public static void printHorizontalLine(char ch,int n) {
+     for(int i = 0; i < n; i++){
+       System.out.print(ch);
+     }
+     System.out.println();
+   }
+    public static void printVerticalLine(char ch, int n) {
+     for(int i = 0; i < n; i++){
+       System.out.println(ch);
+     }
+   }
+     public static void printTriangle(char ch,int n) {
+             for(int i = 1; i<=n; i++)
+               printHorizontalLine(ch,i);
+     }
+   
+   
+   
+   
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int option = 0;
+    int lines = 0;
+    while(option!=-1){
+       System.out.println("\n         ==Menu==\n" +
+                             "1. Print a horizontal line\n"+
+                             "2. Print a vertical line\n"+
+                             "3. Print a triangle\n"+
+                             "4. Exit\n");
+       
+       System.out.println("Please enter your choice");
+       option = input.nextInt();
+       System.out.println("Please enter the line size");
+       lines = input.nextInt();
+       switch(option){
+         case 1:
+           printHorizontalLine('*',lines);
+           break;
+         case 2:
+            printVerticalLine('*',lines);
+           break;
+         case 3:
+            printTriangle('*',lines);
+           break;
+         case 4:
+           break;
+         default:
+           System.out.println("Wrong option");
+       }
+            }     
+    
+  }
+}

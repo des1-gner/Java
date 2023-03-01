@@ -1,0 +1,24 @@
+/*ConditionalOperator.java
+ * use when simple if-else
+ */
+import java.util.Scanner;
+
+public class ConditinalOperator{
+  public static void main(String[] args){
+    Scanner input = new Scanner(System.in);
+    //prompt
+    System.out.println("Enter two numbers separated with spaces");
+    int num1 = input.nextInt();
+    int num2 = input.nextInt();
+    //compare
+   /* if(num1 > num2){
+      System.out.println(num1 + " > " + num2);
+    }
+    else{
+      System.out.println(num1 + " < " + num2);
+    }*/
+    System.out.println( num1 > num2? num1 + " > " + num2: num1 + " < " + num2);
+    
+    
+  }//main
+}//class

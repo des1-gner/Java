@@ -1,22 +1,28 @@
+/** Program RunPets.java will run classes Pet and Dog...*/
+
 public class RunPets{
   public static void main(String[] args){
-    //instance of Pet class
-    Pet pet = new Pet("Tina", 2);
-    pet.speak("Hello");
-    pet.eat("sausage");
-    //instance of subclass Dog
-    Dog dog1 = new Dog("Korr", 5);
-    dog1.speak("Woof");
-    dog1.eat("meat");
-    System.out.println(dog1.getName());
-    dog1.setBreed("cross");
-    System.out.println(dog1.toString());
+    //Create a Pet
+    Pet pet = new Pet();
+    //test methods
+    pet.speak("Hi");
+    pet.eat("anything");
+    //Create a Dog
+    Dog dog1 = new Dog("Chama", 9);
+    //display
+    System.out.println(dog1);
+    //set breed
+    dog1.setBreed("german shephard");
+    //display again
+    System.out.println(dog1);
+    dog1.speak("woof, woof");
+    //create another dog as Dog
+    Dog dog2 = new Dog();
+    //create Dog as a Pet
+    Pet dog3 = new Dog("Tez", 12, "buldog");
+    //display
+    System.out.println(dog3);
     
-    //another instance of Dog declared as Pet
-    Pet dog2 = new Dog("Charmer", 6, "buldog");
-    System.out.println(dog2.toString());
     
-    Dog dog3 = new Dog();
-    System.out.println(dog3.toString());
   }
 }
